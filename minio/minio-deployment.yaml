@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: S3_SUBSYSTEM
     app.openshift.io/runtime: S3
   annotations:
-    app.openshift.io/vcs-uri: 'https://github.com/mmartofel/oadp-backup'
+    app.openshift.io/vcs-uri: 'https://github.com/mmartofel/rhacm-gitops-setup'
 spec:
   replicas: 1
   selector:

@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: minio-s3-storage
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: ''
+    namespace: minio
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: minio
+    repoURL: 'https://github.com/mmartofel/rhacm-gitops-setup'
+    targetRevision: HEAD
+  project: default
