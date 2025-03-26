@@ -12,4 +12,6 @@ spec:
     path: minio
     repoURL: 'https://github.com/mmartofel/rhacm-gitops-setup'
     targetRevision: HEAD
+  syncPolicy:
+    automated: {}
   project: default
