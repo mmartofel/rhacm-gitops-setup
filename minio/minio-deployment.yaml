@@ -62,10 +62,6 @@ spec:
                 secretKeyRef:
                   name: minio-secret
                   key: minio_root_password
-            - name: MINIO_BUCKETS
-              value: 'thanos'
-            - name: MINIO_BUCKET
-              value: 'thanos'
           ports:
             - containerPort: 9090
               protocol: TCP

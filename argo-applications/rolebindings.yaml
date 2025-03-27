@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: admin-rolebindings
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: ''
+    namespace: minio
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: role-bindings
+    repoURL: 'https://github.com/mmartofel/rhacm-gitops-setup'
+    targetRevision: HEAD
+  syncPolicy:
+    automated: {}
+  project: default
