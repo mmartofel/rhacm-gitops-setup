@@ -37,4 +37,5 @@ kind: MultiClusterHub
 metadata:
   name: multiclusterhub
   namespace: open-cluster-management
-spec: {}
+spec:
+  imagePullSecret: pull-secret
